@@ -1,4 +1,4 @@
-// import styles from "./Button.module.css";
+// import styles from "./Button.module.css"; this is used if a .module.css format is used to include css styling
 
 function Button() {
   const styles = {
