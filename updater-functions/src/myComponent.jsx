@@ -22,7 +22,7 @@ function MyComponent() {
     // React puts your updater in a queue (waiting in line)
     // During the next render, it will call them in the same order
 
-    // Note:: use the 1st letter of the usesate variable in update function
+    // Note:: use the 1st letter of the usesate variable in update function it is the common convention
   }
   function decrement() {
     setCount((c) => c - 1);
