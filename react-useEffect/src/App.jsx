@@ -19,36 +19,38 @@
 // #5 Clean up when a component unmounts
 
 import { useEffect, useState } from "react";
+import MyComponent from "./MyComponent.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [color, setColor] = useState("green");
+  // const [count, setCount] = useState(0);
+  // const [color, setColor] = useState("green");
 
-  useEffect(() => {
-    document.title = `Count: ${count} ${color}`;
+  // useEffect(() => {
+  //   document.title = `Count: ${count} ${color}`;
 
-    return () => {
-      // SOME CLEANUP CODE
-    };
-  }, [count, color]);
+  //   return () => {
+  //     // SOME CLEANUP CODE
+  //   };
+  // }, [count, color]);
 
-  function addCount() {
-    setCount((c) => c + 1);
-  }
-  function subtractCount() {
-    setCount((c) => c - 1);
-  }
-  function changeColor() {
-    setColor((c) => (c === "green" ? "red" : "green"));
-  }
+  // function addCount() {
+  //   setCount((c) => c + 1);
+  // }
+  // function subtractCount() {
+  //   setCount((c) => c - 1);
+  // }
+  // function changeColor() {
+  //   setColor((c) => (c === "green" ? "red" : "green"));
+  // }
 
   return (
     <>
-      <p style={{ color: color }}>Count: {count}</p>
+      {/* <p style={{ color: color }}>Count: {count}</p>
       <button onClick={addCount}>Add</button>
       <button onClick={subtractCount}>Subtract</button>
       <br />
-      <button onClick={changeColor}>Change color</button>
+      <button onClick={changeColor}>Change color</button> */}
+      <MyComponent />
     </>
   );
 }
