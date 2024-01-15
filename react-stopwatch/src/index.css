@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ubuntu', sans-serif;
+}
+
+html,
+body {
+  background-image: url(assets/bgi.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {
+  font-size: 6rem;
+  font-weight: bold;
+  color: wheat;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+  margin-bottom: 25px;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin: 5px;
+  min-width: 125px;
+  border: #fff2db solid;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.start-btn {
+  background-color: #19ba51;
+}
+
+.start-btn:hover {
+  background-color: #19ba51d6;
+}
+
+.stop-btn {
+  background-color: #A61324;
+}
+
+.stop-btn:hover {
+  background-color: #a61324d2;
+}
+
+.reset-btn {
+  background-color: #189298;
+}
+
+.reset-btn:hover {
+  background-color: #189298d6
+}
